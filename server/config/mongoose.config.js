@@ -7,3 +7,4 @@ mongoose.connect(`mongodb://localhost/${dbName}`, {
     useUnifiedTopology: true
 })
 .then(() => console.log(err))
+.catch((err) => console.log(err))

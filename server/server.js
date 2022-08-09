@@ -7,12 +7,12 @@ app.use(express.urlencoded({extended: true}));
 
 app.use(
     cors({
-        ordgin: 'http://localhost:3000'
+        orgin: 'http://localhost:3000'
     })
 );
 
 require('./config/mongoose.config')
-//require routes
+require('./routes/planner.routes')
 
 
 app.listen(8000, () => {
