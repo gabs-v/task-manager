@@ -11,7 +11,7 @@ const TaskSchema = new mongoose.Schema({
         type: String,
         required: [
             true,
-            "Details is required"
+            "Details are required"
         ]
     }
 }, {timestamps: true})
