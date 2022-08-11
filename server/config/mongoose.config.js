@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
-const dbName = 'task';
+const dbName = 'Tasks';
 
-mongoose.connect(`mongodb://localhost/${dbName}`, {
-    useUrlParser: true,
+mongoose.connect(`mongodb://localhost/${dbName}`,{
+    useNewUrlParser: true,
     useUnifiedTopology: true
 })
-.then(() => console.log(err))
+.then(() => console.log(`connected to ${dbName} !!`))
 .catch((err) => console.log(err))
